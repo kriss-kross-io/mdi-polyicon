@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+
 <title>Polymer Custom Iconset Generator</title>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 <link rel="import" href="elements/elements.html">
+
 <style is="custom-style">
   html, body {
     margin: 0;
@@ -195,6 +198,8 @@
 
 <template is="dom-bind" id="t">
 
+  <link rel="import" href="mdi-poly-iconset.html">
+
   <iron-meta type="iconset" list="{{iconsets}}"></iron-meta>
 
   <paper-header-panel mode="waterfall">
@@ -228,13 +233,13 @@
                    value="24" min="8" on-change="generateMarkup"></paper-input>
       <paper-toggle-button id="newlines" on-tap="generateMarkup" checked>Format HTML?</paper-toggle-button>
       <div class="buttons">
-        <paper-icon-button icon="icons:select-all" title="Select all"
+        <paper-icon-button icon="mdi-poly-iconset:select-all" title="Select all"
             on-tap="selectText"></paper-icon-button>
-        <paper-icon-button icon="icons:content-copy" title="Copy to clipboard"
+        <paper-icon-button icon="mdi-poly-iconset:content-copy" title="Copy to clipboard"
             on-tap="copyText"></paper-icon-button>
       </div>
       <div class="endbuttons">
-        <paper-icon-button icon="icons:bug-report" title="File a bug"
+        <paper-icon-button icon="mdi-poly-iconset:bug-report" title="File a bug"
             on-tap="fileBug" class="bug"></paper-icon-button>
       </div>
     </paper-toolbar>
@@ -365,7 +370,7 @@
   };
 
   t.fileBug = function() {
-    window.location.href = 'https://github.com/PolymerLabs/polyicon/issues/new';
+    window.location.href = 'https://github.com/kriss-kross-io/mdi-polyicon/issues/new';
   };
 
   t.updateURL = function() {
@@ -434,13 +439,6 @@
   });
 })();
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-39334307-15', 'auto');
-ga('send', 'pageview');
 </script>
 </body>
 </html>
