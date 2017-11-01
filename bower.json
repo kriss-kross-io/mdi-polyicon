@@ -1,5 +1,5 @@
 {
-  "name": "iconset-generator",
+  "name": "mdi-iconset-generator",
   "description": "Generates a custom icon set",
   "version": "0.0.1",
   "main": "index.html",
@@ -14,9 +14,9 @@
   ],
   "dependencies": {
     "iron-icon": "PolymerElements/iron-icon#^1.0.7",
-    "iron-icons": "PolymerElements/iron-icons#^1.1.0",
     "iron-meta": "PolymerElements/iron-meta#^1.1.1",
     "iron-selector": "PolymerElements/iron-selector#^1.0.8",
+    "mdi-iconset-svg": "kriss-kross-io/mdi-iconset-svg#^1.0.0",
     "paper-header-panel": "PolymerElements/paper-header-panel#^1.1.2",
     "paper-icon-button": "PolymerElements/paper-icon-button#^1.0.6",
     "paper-input": "PolymerElements/paper-input#^1.1.3",

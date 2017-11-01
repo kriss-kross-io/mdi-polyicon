@@ -22,6 +22,6 @@ echo "\nBuilding app version: $deployVersion\n"
 gulp
 
 echo "Deploying app version: $deployVersion"
-#gcloud preview app deploy $APPDIR/../dist/app.yaml \
-#    --project poly-icon --version $deployVersion
-appcfg.py update dist/app.yaml -A poly-icon --version $deployVersion
+gcloud app deploy $APPDIR/../dist/app.yaml \
+    --project mdi-poly-icon --version $deployVersion
+#appcfg.py update dist/app.yaml -A mdi-poly-icon --version $deployVersion

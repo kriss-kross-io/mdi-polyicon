@@ -1,8 +1,8 @@
 {
-  "name": "iconset-generator",
+  "name": "mdi-iconset-generator",
   "version": "0.0.1",
   "description": "Make an HTML file with inline scripts CSP compliant",
-  "main": "index.js",
+  "main": "index.html",
   "bin": {
     "polyicon": "bin/polyicon"
   },
